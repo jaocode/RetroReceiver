@@ -2,7 +2,7 @@
 A Python script that attempts to receive programs transmitted during episodes of The Computer Program, a 1980s BBC show.
 
 ## Dependencies
-###Python 
+### Python
 Script was tested using Python 3.12.4 on MacOS. It should work on other platforms. 
 
 ### OpenCV 
