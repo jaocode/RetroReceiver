@@ -5,13 +5,13 @@ A Python script that attempts to receive programs transmitted during episodes of
 ###Python 
 Script was tested using Python 3.12.4 on MacOS. It should work on other platforms. 
 
-###OpenCV 
+### OpenCV 
 Install using "python3 -m pip install opencv-python" 
 
-###ffmpeg libraries
+### ffmpeg libraries
 Likely required for loading video content with OpenCV. How you obtain them depends on the OS you're using. 
 
-On MacOS, the libraries can be obtained using [Homebrew|https://brew.sh]
+On MacOS, the libraries can be obtained using [Homebrew](https://brew.sh) package manager
 
 On Linux distributions based on Debian,like Ubuntu, they can be installed via apt-get.
 
@@ -30,6 +30,8 @@ Update the settings block of the script to customize it for your input video.
 - ignore_header_bits: When true, the script attempts to ignore the leading '1' bits. It will start recording bits after the first '0'. May not be of real value.
 - save_frames: When true, each analyzed frame is saved off and sorted into a folder based if the pixel test detected light or dark. Useful for debugging that all video frames properly interpreted. 
 - brightness_threshold: Sets the threshold for the pixel test for what level of intensity should be considered light. May need to tweak this based on the quality of the video. 
+
+Run the script using command "python3 retro-receiver.py"
 
 ## Output
 When the script is finished running, a file called output.bin is created in the output folder. This is a binary file built from the bits interpreted from the video transmission. In theory, if all went well this would be a program that runs on a C64 or BBC Micro. 
